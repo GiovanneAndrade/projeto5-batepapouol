@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+::placeholder { 
+  font-size: 18px;
+  opacity: 1; 
+}
+
+.pagina-inicial {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 72px;
+}
+.pagina-inicial img {
+  width: 150px;
+  margin-bottom: 94px;
+}
+.pagina-inicial input {
+  width: 261px;
+  height: 54px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.pagina-inicial button{
+  width: 109px;
+  height: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #696969;
+  border: none;
+  background: #E7E7E7;
+  border-radius: 9px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.pagina-inicial button:hover{
+  transform: scale(1.05);
+}
+.pagina-inicial span{
+  margin-top:10px;
+}
+.geral {
+  background-color: #F3F3F3;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.topo {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 22px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.topo ion-icon {
+  font-size: 40px;
+}
+.topo img {
+  width: 75px;
+  height: 53px;
+}
+.input-mensagem {
+  width: 100%;
+  height: 73px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.input-mensagem span{
+  position: absolute;
+  bottom: 5px;
+  left:15px;
+  z-index: 5;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+.input-mensagem input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 15px;
+  padding-bottom: 8px;
+}
+.input-mensagem ion-icon{
+  position: absolute;
+  font-size: 26px;
+  z-index: 3;
+  bottom: 21px;
+  right: 18px;
+}
+.chat {
+  width: 100%;
+  margin-top: 100px;
+}
+.mensagem-box{
+  width: 100%;
+  padding: 12px 6px;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  word-break: break-all; 
+}
+
+.status{
+ background-color:#DCDCDC;
+}
+.message {
+  background-color: white;
+}
+.private_message {
+  background-color: #FFDEDE;
+}
+.horario {
+  color: #AAAAAA;
+  margin-right: 7px;
+}
+.conteudo {
+  width: 100%; 
+}
+.nome-do-usuario, .remetente {
+  font-weight: 700;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #000000;
+  z-index: 3;
+  opacity: 0.4;
+}
+.menu-lateral {
+  width: 259px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  padding: 10px 28px;
+  overflow-y: scroll;
+}
+.menu-lateral span:first-child {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.usuario, .selecao {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.menu-lateral ion-icon{
+  font-size: 25px;
+  margin-right: 8px;
+
+}
+.usuario,.selecao span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.oculto {
+  display: none;
+  opacity: 0;
+ 
+}
+.menu-lateral img{
+  position: absolute;
+  right: 25px;
+  opacity: 0;
+}
+.selecionado img {
+  opacity: 1;
+}
